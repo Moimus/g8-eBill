@@ -1,0 +1,30 @@
+<p>e-bill-form</p>
+<div class="flexCol maxWidth50Perc">
+  <form class="flexCol" [formGroup]="invoiceForm" (ngSubmit)="onSubmit()">
+    <label for="invoiceNumber">invoiceNumber</label>
+    <input id="invoiceNumber" formControlName="invoiceNumber" type="text" name="invoiceNumber" (change)="change()">
+
+    <label for="invoiceIssueDate">invoiceIssueDate</label>
+    <input id="invoiceIssueDate" formControlName="invoiceIssueDate" type="text" name="invoiceIssueDate" (change)="change()">
+
+    <label for="invoiceTypeCode">invoiceTypeCode</label>
+    <input id="invoiceTypeCode" formControlName="invoiceTypeCode" type="text" name="invoiceTypeCode" (change)="change()">
+
+    <label for="invoiceCurrencyCode">invoiceCurrencyCode</label>
+    <input id="invoiceCurrencyCode" formControlName="invoiceCurrencyCode" type="text" name="invoiceCurrencyCode" (change)="change()">
+
+    <label for="vatAccountingCurrencyCode">vatAccountingCurrencyCode</label>
+    <input id="vatAccountingCurrencyCode" formControlName="vatAccountingCurrencyCode" type="text" name="vatAccountingCurrencyCode" (change)="change()">
+
+    <label for="valueAddedTaxPointDate">valueAddedTaxPointDate</label>
+    <input id="valueAddedTaxPointDate" formControlName="valueAddedTaxPointDate" type="text" name="valueAddedTaxPointDate" (change)="change()">
+
+    <label for="valueAddedTaxPointCode">valueAddedTaxPointCode</label>
+    <input id="valueAddedTaxPointCode" formControlName="valueAddedTaxPointCode" type="text" name="valueAddedTaxPointCode" (change)="change()">
+
+    <label for="paymentDueDate">paymentDueDate</label>
+    <input id="paymentDueDate" formControlName="paymentDueDate" type="text" name="paymentDueDate" (change)="change()">
+
+    <button class="mw-5" type="submit" name="submitButton" style="margin-top: 1rem;">Submit</button>
+  </form>
+</div>

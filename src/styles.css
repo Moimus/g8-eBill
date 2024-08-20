@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: urbanist;
+  background-color: #20272f;
+  color: #FFFFFF;
+  height: 100%;
+  background-image: linear-gradient(60deg, #20272f 0%, #0f1113 100%);
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "urbanist";
+  src: url("./assets/Urbanist-VariableFont_wght.ttf") format("truetype");
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.justCenter{
+  justify-content: center;
+}
+
+.justStart{
+  justify-content: flex-start;
+}
+
+.alignBaseline{
+  align-items: baseline;
+}
+
+.maxWidth50Perc{
+  max-width: 50%;
+}
+
+.mw-5{
+  max-width: 5rem;
+}
